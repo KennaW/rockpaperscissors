@@ -4,7 +4,7 @@
 
     class RockPaperScissorsTest extends PHPUnit_Framework_TestCase
     {
-
+        //sample from assignment
         function test_roShamBo()
         {
             //Arrange
@@ -19,6 +19,9 @@
             $this->assertEquals("Player 1", $result);
         }
 
+        //tests for our code
+
+        //test for player 1 winning
         function test_roShambo2()
         {
             //Arrange
@@ -33,6 +36,7 @@
             $this->assertEquals("Player 1 wins", $result);
         }
 
+        //test for player 2 win
         function test_player2win()
         {
             //Arrange
@@ -46,6 +50,7 @@
             $this->assertEquals("Player 2 wins", $result);
         }
 
+        //test for draw
         function test_draw()
         {
             //Arrange
@@ -59,6 +64,7 @@
             $this->assertEquals("Draw!!", $result);
         }
 
+        //test for else
         function test_else()
         {
             //Arrange

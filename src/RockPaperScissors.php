@@ -13,6 +13,7 @@ class RockPaperScissors
         $player2_wins = ["JF", "jf", "FJ", "fj", "KS", "ks", "SK", "sk", "LD", "ld", "DL", "dl"];
         $draw = ["SJ", "sj", "JS", "js", "DK", "dk", "KD", "kd", "FL", "fl", "LF", "lf"];
 
+
         if(in_array($input, $player1_wins)) {
             return "Player 1 wins";
         }
@@ -27,6 +28,16 @@ class RockPaperScissors
         else {
             return "Not a valid combination. Please use SDF and JKL to play.";
         }
+    }
+
+    function computerPlayer($playcomputer)
+    {
+        $player2array = ["j","k","l"];
+        $computerplayer2 = array_rand($player2array, 1);
+        $tempinput = array[$playcomputer, $computerplayer2];
+        $input = strval($tempinput);
+
+
     }
 
 

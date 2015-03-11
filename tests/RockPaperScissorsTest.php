@@ -19,17 +19,57 @@
             $this->assertEquals("Player 1", $result);
         }
 
-        function test_roShambo2($input)
+        function test_roShambo2()
         {
             //Arrange
             $test_RockPaperScissors = new RockPaperScissors;
-            $input = "sl"
+            $input = "sl";
+            // $player1_wins = ["sl"];
 
             //Act
             $result = $test_RockPaperScissors->roShamBo2($input);
 
             //Assert
             $this->assertEquals("Player 1 wins", $result);
+        }
+
+        function test_player2win()
+        {
+            //Arrange
+            $test_RockPaperScissors = new RockPaperScissors;
+            $input = "KS";
+
+            //Act
+            $result = $test_RockPaperScissors->roShamBo2($input);
+
+            //assert
+            $this->assertEquals("Player 2 wins", $result);
+        }
+
+        function test_draw()
+        {
+            //Arrange
+            $test_RockPaperScissors = new RockPaperScissors;
+            $input = "kd";
+
+            //act
+            $result = $test_RockPaperScissors->roShamBo2($input);
+
+            //assert
+            $this->assertEquals("Draw!!", $result);
+        }
+
+        function test_else()
+        {
+            //Arrange
+            $test_RockPaperScissors = new RockPaperScissors;
+            $input = "qq";
+
+            //act
+            $result = $test_RockPaperScissors->roShamBo2($input);
+
+            //Assert
+            $this->assertEquals("Not a valid combination. Please use SDF and JKL to play.", $result);
         }
     }
 

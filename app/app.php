@@ -14,5 +14,12 @@
         return $app['twig']->render('form.twig');
     });
 
+    $app->get("/view_results", function() use ($app) {
+        $input = new RockPaperScissors;
+        $results = $input->roShamBo2($_GET['input']);
+        return $app['twig']->render('view_results.twig', array ('cow' => $results));
+
+    });
+
     return $app;
 ?>

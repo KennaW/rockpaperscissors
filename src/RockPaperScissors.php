@@ -30,12 +30,13 @@ class RockPaperScissors
         }
     }
 
-    function computerPlayer($playcomputer)
+    function computerPlayer($input)
     {
         $player2array = ["j","k","l"];
         $computerplayer2 = array_rand($player2array, 1);
-        $tempinput = array[$playcomputer, $computerplayer2];
-        $input = strval($tempinput);
+        $newval = $input . $computerplayer2;
+        
+        $this->roshambo2($newval);
 
 
     }

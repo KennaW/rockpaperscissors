@@ -5,19 +5,19 @@
     class RockPaperScissorsTest extends PHPUnit_Framework_TestCase
     {
         //sample from assignment
-        function test_roShamBo()
-        {
-            //Arrange
-            $test_RockPaperScissors = new RockPaperScissors;
-            $first_input = "rock";
-            $second_input = "scissors";
-
-            //Act
-            $result = $test_RockPaperScissors->roShamBo($first_input, $second_input);
-
-            //Assert
-            $this->assertEquals("Player 1", $result);
-        }
+        // function test_roShamBo()
+        // {
+        //     //Arrange
+        //     $test_RockPaperScissors = new RockPaperScissors;
+        //     $first_input = "rock";
+        //     $second_input = "scissors";
+        //
+        //     //Act
+        //     $result = $test_RockPaperScissors->roShamBo2($first_input, $second_input);
+        //
+        //     //Assert
+        //     $this->assertEquals("Player 1", $result);
+        // }
 
         //tests for our code
 
@@ -76,6 +76,21 @@
 
             //Assert
             $this->assertEquals("Not a valid combination. Please use SDF and JKL to play.", $result);
+        }
+
+        //test for computer
+        function test_computer()
+        {
+          //arrange
+          $test_RockPaperScissors = new RockPaperScissors;
+          $input = "s";
+
+          //act
+          $result = $test_RockPaperScissors->computerPlayer($input);
+          
+
+          //Assert
+          $this->assertEquals("Player 2 wins", $result);
         }
     }
 

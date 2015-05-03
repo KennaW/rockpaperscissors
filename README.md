@@ -15,7 +15,7 @@ Players select their weapon of choice with the appropriate keyboard key. Press "
 Scissors beats paper, paper beats rock, rock beats scissors.
 
 ###Play Against Computer
-Same as above, except the computer takes over as Player 2. User should choose from "s", "d", or "f".
+Same as above, except the computer takes over as Player 2. User should choose from `s`, `d`, or `f`.
 Press "Play Computer!" to see winner!
 
 

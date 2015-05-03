@@ -21,5 +21,12 @@
 
     });
 
+    $app->get("/computer_results", function() use ($app) {
+      $input = new RockPaperScissors;
+      $autoplay = $input->computerPlayer($_GET['input']);
+      $computer_results = $input->roShamBo2($autoplay);
+      return $app['twig']->render('computer_results.twig', array ('computer_results' => $computer_results));
+    });
+
     return $app;
 ?>

@@ -14,12 +14,21 @@
                     <p>
                     <label for='input'>Play your buddy in the same form:</label>
                     <input id='input' name='input' class='form-control' type='password' maxlength= '2'>
-
-                    Play Computer!
-
                 </div>
                 <button type='submit' class='btn btn-info' type='text'>Play!</button>
             </form>
+          </div>
+
+      <div class='container'>
+        <p>Player: Use <b>S</b> for rock, <b>D</b> for paper, and <b>F</b> for scissors</p>
+        <p>The Computer will play as Player 2</p>
+      <form action='/computer_results'>
+        <div class = 'form-group'>
+            <label for='input'>Play the computer!</label>
+            <input id='input' name='input' class='form-control' maxlength='1'>
+            <button type='submit' class='btn btn-info' type='text'>Play Computer!</button>
         </div>
+      </div>
+      </form>
 </body>
 </html>

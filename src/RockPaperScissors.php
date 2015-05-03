@@ -51,11 +51,11 @@ class RockPaperScissors
 
         //concat
         $newval = $input . $input2;
-        var_dump($newval);
+        return $newval;
 
-        //run through first function
-        $this = new RockPaperScissors;
-        $this->roShamBo2($newval);
+        // //run through first function
+        // $this = new RockPaperScissors;
+        // $this->roShamBo2($newval);
 
 
 

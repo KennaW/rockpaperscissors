@@ -87,10 +87,11 @@
 
           //act
           $result = $test_RockPaperScissors->computerPlayer($input);
-          
+
 
           //Assert
-          $this->assertEquals("Player 2 wins", $result);
+          //Test will probably fail, since computer player is random.
+          $this->assertEquals("sj", $result);
         }
     }
 

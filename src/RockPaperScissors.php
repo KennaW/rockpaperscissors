@@ -3,11 +3,6 @@
 class RockPaperScissors
 {
 
-    // function roShamBo($first_input, $second_input)
-    // {
-    //     return "Player 1";
-    // }
-
 //two player mode
 //compares input to array of all possible win states
 //else "not valid"
@@ -42,22 +37,13 @@ class RockPaperScissors
 
         //grab random index from computer player array
         $computerplayer2 = array_rand($player2array, 1);
-        var_dump($computerplayer2);
-
 
         //assign index to input2
         $input2 = $player2array[$computerplayer2];
-        var_dump($input2);
 
         //concat
         $newval = $input . $input2;
         return $newval;
-
-        // //run through first function
-        // $this = new RockPaperScissors;
-        // $this->roShamBo2($newval);
-
-
 
     }
 

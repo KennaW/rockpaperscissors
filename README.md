@@ -2,14 +2,14 @@
 
 ###Play Against a Buddy
 Player 1
-  *`s` = rock
-  *`d` = paper
-  *`f` = scissors
+  * `s` = rock
+  * `d` = paper
+  * `f` = scissors
 
 Player 2
-  *`j` = rock
-  *`k` = paper
-  *`f` = scissors
+  * `j` = rock
+  * `k` = paper
+  * `f` = scissors
 
 Players select their weapon of choice with the appropriate keyboard key. Press "Play!" to see the winner.
 Scissors beats paper, paper beats rock, rock beats scissors.
